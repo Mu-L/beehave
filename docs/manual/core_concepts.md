@@ -103,14 +103,25 @@ Consider this sequence: "Check if enemy is visible" → "Move to enemy" → "Att
 
 Here's a visualization of how a simple behavior tree executes:
 
-![Behavior Tree Execution](../assets/bt_execution_flow.png)
+![Behavior Tree Execution](../assets/bt_execution_flow.svg)
 
 In this example:
-1. The Selector node checks its first child (Sequence)
-2. The Sequence node checks if the enemy is visible
-3. If yes, it moves to the enemy and attacks
-4. If the enemy isn't visible or any part of the sequence fails, the Selector moves to its second child
-5. The second sequence makes the AI patrol the area
+1. The Root Selector first tries its left child (the Engage sequence)
+2. The Engage sequence checks its children in order:
+   - First, it evaluates "Is Enemy Visible?" condition
+   - If successful, it proceeds to "Move to Enemy" action
+   - If that succeeds, it executes the "Attack Enemy" action
+   - The sequence succeeds only if all three nodes succeed
+3. If any part of the Engage sequence fails (e.g., enemy not visible), the Root Selector will try its right child
+4. The Patrol sequence then executes its "Patrol Area" action
+
+The diagram uses different colored arrows to represent execution status:
+- Red dashed lines show the execution path
+- Green arrows indicate SUCCESS returns
+- Red arrows indicate FAILURE returns
+- Blue arrows indicate RUNNING status
+
+This continual decision-making allows the AI to respond dynamically - attacking when enemies are visible, and patrolling otherwise.
 
 ## Common Patterns
 
