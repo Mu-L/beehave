@@ -62,7 +62,7 @@ Behavior trees are a modular way to build AI logic for your game. For simple AI,
 
 ## Media
 
-### Beehave Overview (GamesFromScratch)
+### Beehave Overview (Gamefromscratch)
 [![tutorial-thumbnail](https://img.youtube.com/vi/egutKInUfko/0.jpg)](https://www.youtube.com/watch?v=egutKInUfko)
 
 ### Godot 3.5 Tutorial

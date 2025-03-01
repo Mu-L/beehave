@@ -43,7 +43,7 @@ In order to avoid bugs creeping into the codebase, every feature is covered by u
 
 # Media
 
-## Beehave Overview (GamesFromScratch)
+## Beehave Overview (Gamefromscratch)
 [![tutorial-thumbnail](https://img.youtube.com/vi/egutKInUfko/0.jpg)](https://www.youtube.com/watch?v=egutKInUfko)
 
 ## Godot 3.5 Tutorial
