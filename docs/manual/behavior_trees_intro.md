@@ -21,7 +21,7 @@ Behavior trees offer several key advantages:
 
 A behavior tree is like a decision tree with specialized nodes:
 
-![Behavior Tree Structure](../assets/behavior_tree_structure.png)
+![Behavior Tree Structure](../assets/behaviour_tree_structure.svg)
 
 - **Root**: The starting point of the tree (like the trunk of a tree)
 - **Composite Nodes**: Control the flow by managing multiple child nodes (like branches that split)
@@ -51,7 +51,7 @@ Status | Meaning | Real-world Example
 
 Let's look at a concrete example - a guard in your game:
 
-![Simple Behavior Tree Example](../assets/simple_bt_example.png)
+![Simple Behavior Tree Example](../assets/simple_bt_example.svg)
 
 The guard's behavior can be described as:
 
