@@ -47,7 +47,8 @@ To better understand what branch to choose from for which Godot version, please 
 |---|---|--|
 |`3.x`|`3.x`|`1.x`|
 |`4.x`|`4.x`|`2.x`|
-|`4.1.x`|`4.x`|`2.7.x`|
+|`4.5+`|`4.x`|`2.10+`|
+|`4.1.x`|`4.x`|`2.9.x`|
 |`4.0.x`|`4.x`|`2.7.x`|
 
 Refer to [this guide](https://bitbra.in/blog/godot-addon-compatibility/) for more details behind this structure.
